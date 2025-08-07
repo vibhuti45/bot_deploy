@@ -1,0 +1,9 @@
+tweepy
+google-generativeai
+requests
+certifi
+feedparser
+re
+random
+subprocess
+os
