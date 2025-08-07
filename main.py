@@ -4,7 +4,7 @@ import tweepy
 import os
 
 # === CONFIG ===
-GEMINI_API_KEY = "AIzaSyA2ilH4ZcZUnxGWiuNDnpOuUCG9zvs_Gew"
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 genai.configure(api_key=GEMINI_API_KEY)
 
 
@@ -67,11 +67,12 @@ print("📤 Posting to X (Twitter)...")
 import tweepy
 
 # Replace with your actual keys
-BEARER_TOKEN = "AAAAAAAAAAAAAAAAAAAAAOHe3QEAAAAA2DSLh4SQw7OqFUBYYqFL5AnT63U%3DLA1lQbIwzC6HSSZLxPIjsbt6QpCSfDmFyAWFdzsUs69PmuM04B"
-API_KEY = "AlzejWTbX3V3vFYeK5i7GR0Gw"
-API_SECRET = "a22ZdwdESKvwkd4klWKKzhq7d4muZpixnFthjNejhHNjyEZ6Ww"
-ACCESS_TOKEN = "1953524743677595648-l5b2IEAN9oz9jyqyuTr8jAdgLAXzRN"
-ACCESS_SECRET = "h4zO0m3nxFwya2waehucZJpV0ZKgI3IUCcuZ5UiCKFpRc"
+BEARER_TOKEN = os.getenv("BEARER_TOKEN")
+API_KEY = os.getenv("API_KEY")
+API_SECRET = os.getenv("API_SECRET")
+ACCESS_TOKEN = os.getenv("ACCESS_TOKEN")
+ACCESS_SECRET = os.getenv("ACCESS_SECRET")
+
 
 
 # Authenticate using tweepy.Client (API v2)
