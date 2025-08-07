@@ -3,6 +3,3 @@ google-generativeai
 requests
 certifi
 feedparser
-random
-subprocess
-os
